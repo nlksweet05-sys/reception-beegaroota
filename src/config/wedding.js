@@ -3,7 +3,7 @@ const wedding = {
   bride: 'Lakshitha Karthik N',
   groom: 'Sanath S',
   brideFamily: ['Smt Vijayashree B G', 'Sri J Nethaji Bose'],
-  groomFamily: ['Smt H Sujatha', 'Sri C.R Satish Kumar'],
+  groomFamily: ['Smt H Sujatha', 'Sri C.R Sathish Kumar'],
   websiteUrl: 'https://YOUR-SITE.vercel.app', // ← replace after deploying
   musicFile: '/music/wedding-background.mp3',
   rsvp: [{ label: '9448688232', wa: '919448688232' }, { label: '9448303753', wa: '919448303753' }],
