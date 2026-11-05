@@ -61,9 +61,76 @@ main.pre{opacity:0}main.reveal{animation:fade .9s both}
 @media (min-width:768px){.sec{padding-inline:10vw}.nav{justify-content:center}.nav button{font-size:.78rem}.music{bottom:calc(80px + var(--safe-b))}}
 @media (max-width:340px){.btn{font-size:.72rem;padding:0 12px}.nav button{padding:0 9px}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.petals{display:none}}
-.credit{margin-top:22px;display:flex;flex-direction:column;align-items:center;gap:10px;width:100%;max-width:300px}
-.credit-line{display:flex;align-items:center;gap:10px;width:100%;color:#b8902f;font-size:.6rem}
-.credit-line span{flex:1;height:1px;background:linear-gradient(90deg,transparent,#b8902f,transparent);opacity:.7}
-.credit-line i{font-style:normal}
-.credit p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:.95rem;letter-spacing:.08em;color:#b8902f;opacity:.9;max-width:none}
-@media (min-width:768px){.credit{max-width:360px}.credit p{font-size:1.05rem}}
+
+.credit {
+  margin: 28px auto 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 340px;
+  padding: 16px 20px;
+  border: 1px solid rgba(184, 144, 47, 0.35);
+  border-radius: 12px;
+  background: linear-gradient(
+    135deg,
+    rgba(184, 144, 47, 0.10),
+    rgba(184, 144, 47, 0.025),
+    rgba(184, 144, 47, 0.10)
+  );
+  box-shadow: 0 5px 20px rgba(184, 144, 47, 0.08);
+}
+
+.credit-line {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  color: #b8902f;
+  font-size: .7rem;
+}
+
+.credit-line span {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #b8902f,
+    transparent
+  );
+  opacity: .8;
+}
+
+.credit-line i {
+  font-style: normal;
+  font-size: .85rem;
+  color: #c9a34e;
+}
+
+.credit p {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.08rem;
+  font-weight: 600;
+  letter-spacing: .045em;
+  line-height: 1.6;
+  color: #c5a052;
+  opacity: 1;
+  max-width: none;
+  text-align: center;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .credit {
+    max-width: 390px;
+    padding: 19px 25px;
+  }
+
+  .credit p {
+    font-size: 1.2rem;
+  }
+}
+
