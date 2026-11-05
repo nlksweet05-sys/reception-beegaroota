@@ -10,6 +10,6 @@ const Art = () => (
   </svg>
 )
 export default function BeegarOota() {
-  return <EventSection id="beegar" theme="t-beegar" chapter="THE FEAST OF TOGETHERNESS" ev={wedding.events.beegar}
+  return <EventSection id="beegara" theme="t-beegara" chapter="THE FEAST OF TOGETHERNESS" ev={wedding.events.beegar}
     subtitle="A Traditional Feast of Love, Family & Togetherness" Art={Art} petal="#e0a526" />
 }
