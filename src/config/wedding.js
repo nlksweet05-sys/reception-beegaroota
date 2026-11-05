@@ -21,7 +21,7 @@ const wedding = {
       mapLink: 'https://share.google/qZq2YdN6LnMae6WOn',
     },
     beegar: {
-      title: 'Beegar Oota', dateText: '25 November 2026', timeText: '12:30 Noon onwards',
+      title: 'Beegara Oota', dateText: '25 November 2026', timeText: '12:30 Noon onwards',
       start: '2026-11-25T12:30:00+05:30', end: null, // no end time given → calendar defaults to 2 hrs
       venue: 'Karnataka Engineers Academy', address: '2nd Main Rd, 3rd Stage 4th Block, Shakthi Ganapathi Nagar, Basaveshwar Nagar, Bengaluru, Karnataka 560079',
       mapLink: 'https://share.google/gMhas5ZMsMLvmmnFA',
