@@ -9,7 +9,14 @@ import BeegarOota from './components/BeegarOota'
 import RSVP from './components/RSVP'
 import Footer from './components/Footer'
 import MusicPlayer from './components/MusicPlayer'
+
 import * as bgm from './audio'
+
+const variant = import.meta.env.VITE_INVITE_VARIANT || 'all'
+
+const showMuhurtham = variant === 'all'
+const showReception = ['all', 'reception-beegar', 'reception'].includes(variant)
+const showBeegar = ['all', 'reception-beegar'].includes(variant)
 
 export default function App() {
   const [opened, setOpened] = useState(false)
@@ -62,9 +69,9 @@ export default function App() {
 
       <main className={opened ? 'reveal' : 'pre'}>
         <Welcome />
-        <Muhurtham />
-        <Reception />
-        <BeegarOota />
+        {showMuhurtham && <Muhurtham />}
+        {showReception && <Reception />}
+        {showBeegar && <BeegarOota />}
         <RSVP />
         <Footer />
       </main>
