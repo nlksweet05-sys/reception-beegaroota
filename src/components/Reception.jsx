@@ -7,6 +7,6 @@ const Art = () => (
   </svg>
 )
 export default function Reception() {
-  return <EventSection id="reception" theme="t-reception" chapter="CHAPTER 2 – THE CELEBRATION" ev={wedding.events.reception}
+  return <EventSection id="reception" theme="t-reception" chapter="THE CELEBRATION" ev={wedding.events.reception}
     subtitle="An Evening of Celebration, Love & Togetherness" Art={Art} petal="#e6c46a" countdown />
 }
