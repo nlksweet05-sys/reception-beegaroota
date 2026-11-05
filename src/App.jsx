@@ -9,12 +9,7 @@ import BeegarOota from './components/BeegarOota'
 import RSVP from './components/RSVP'
 import Footer from './components/Footer'
 import MusicPlayer from './components/MusicPlayer'
-
-const variant = import.meta.env.VITE_INVITE_VARIANT || 'all'
-
-const showMuhurtham = variant === 'all'
-const showReception = ['all', 'reception-beegar', 'reception'].includes(variant)
-const showBeegar = ['all', 'reception-beegar'].includes(variant)
+import * as bgm from './audio'
 
 export default function App() {
   const [opened, setOpened] = useState(false)
@@ -27,17 +22,49 @@ export default function App() {
     }
   }, [opened])
 
+  // Stop music when tab is hidden.
+  // Attempt to restart music when the wedding tab becomes visible.
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        bgm.stop()
+      } else if (opened) {
+        bgm.play()
+      }
+    }
+
+    const handlePageHide = () => {
+      bgm.stop()
+    }
+
+    document.addEventListener(
+      'visibilitychange',
+      handleVisibilityChange
+    )
+
+    window.addEventListener('pagehide', handlePageHide)
+
+    return () => {
+      document.removeEventListener(
+        'visibilitychange',
+        handleVisibilityChange
+      )
+
+      window.removeEventListener('pagehide', handlePageHide)
+    }
+  }, [opened])
+
   return (
     <>
-      {!opened && <Envelope onDone={() => setOpened(true)} />}
+      {!opened && (
+        <Envelope onDone={() => setOpened(true)} />
+      )}
 
       <main className={opened ? 'reveal' : 'pre'}>
         <Welcome />
-
-        {showMuhurtham && <Muhurtham />}
-        {showReception && <Reception />}
-        {showBeegar && <BeegarOota />}
-
+        <Muhurtham />
+        <Reception />
+        <BeegarOota />
         <RSVP />
         <Footer />
       </main>
