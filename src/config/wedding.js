@@ -1,7 +1,7 @@
 // ✏️ EDIT EVERYTHING HERE. iso = date/time in India time (+05:30).
 const wedding = {
   bride: 'Lakshitha Karthik N',
-  groom: 'Sanath Kotekar S',
+  groom: 'Sanath S',
   brideFamily: ['Smt Vijayashree B G', 'Sri J Nethaji Bose'],
   groomFamily: ['Smt H Sujatha', 'Sri C.R Satish Kumar'],
   websiteUrl: 'https://YOUR-SITE.vercel.app', // ← replace after deploying
