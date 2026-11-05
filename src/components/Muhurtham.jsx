@@ -10,7 +10,7 @@ const Art = () => (
   </svg>
 )
 export default function Muhurtham() {
-  return <EventSection id="muhurtham" theme="t-muhurtham" chapter="CHAPTER 1 – THE SACRED BEGINNING" ev={wedding.events.muhurtham}
+  return <EventSection id="muhurtham" theme="t-muhurtham" chapter="THE SACRED BEGINNING" ev={wedding.events.muhurtham}
     subtitle="A Sacred Beginning, Blessed by Love and Tradition" Art={Art} petal="#fffdf0"
     message="With the blessings of our beloved elders, we request the honour of your gracious presence as we celebrate the sacred union of two souls." />
 }
