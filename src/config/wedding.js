@@ -6,7 +6,10 @@ const wedding = {
   groomFamily: ['Smt H Sujatha', 'Sri C.R Sathish Kumar'],
   websiteUrl: 'https://YOUR-SITE.vercel.app', // ← replace after deploying
   musicFile: '/music/wedding-background.mp3',
-  rsvp: [{ label: '9448688232', wa: '919448688232' }, { label: '9448303753', wa: '919448303753' }],
+   rsvp: [
+  { label: 'Bose', wa: '919448688232' },
+  { label: 'Sathish', wa: '919448303753' }
+],
   events: {
     muhurtham: {
       title: 'The Muhurtham', dateText: '19 November 2026', timeText: '9:30 AM – 10:30 AM',
