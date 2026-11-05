@@ -11,6 +11,10 @@ export default function Footer() {
       <p className="fam">{wedding.brideFamily.join(' and ')}</p><div className="amp script">&amp;</div><p className="fam">{wedding.groomFamily.join(' and ')}</p>
       <Divider />
       <p className="thanks">THANK YOU FOR BEING PART OF OUR CELEBRATION.</p>
+      <div className="credit">
+        <div className="credit-line" aria-hidden="true"><span /><i>✦</i><span /></div>
+        <p>Coding by Lakshitha &amp; Designing by Sanath</p>
+      </div>
     </footer>
   )
 }
